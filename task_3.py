@@ -32,6 +32,7 @@ class TotalPoints(PointsForPlace, PointsForMeters):
         total += PointsForPlace.get_points_for_place(place)
         total += PointsForMeters.get_points_for_meters(meters)
         return total
+    
 
 points_for_place = PointsForPlace()
 print(points_for_place.get_points_for_place(10))
